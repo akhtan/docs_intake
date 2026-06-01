@@ -227,7 +227,7 @@ def get_documents(
         query = query.filter(
             or_(
                 Document.title.ilike(f"%{search}%"),
-                Document.body.ilike(f"%{search}%")
+                Author.name.ilike(f"%{search}%")
             )
         )
     if cited:
