@@ -11,12 +11,12 @@
 
 2. Or try to feed the app with the command below from the working folder:
 `curl -H "Content-Type: application/json" -X POST http://localhost:8090/ingestions -d "{\"file_path\":\"input_docs/documents_1.jsonl\"}"`
-
 add more files via changing the body.\
-2. Get documents with chunks of 10 files by: `curl http://localhost:8090/documents`\
-3. Get a specific document: `curl http://localhost:8090/documents/312` where 312 is an ID.\
-4. Use the following parameters to filter `start_date, end_date, organization, tag, status, search`.\
-5. `cited=true` is a special parameter that will sort in descending order by citation count.
+
+3. Get documents with chunks of 10 files by: `curl http://localhost:8090/documents`\
+4. Get a specific document: `curl http://localhost:8090/documents/312` where 312 is an ID.\
+5. Use the following parameters to filter `start_date, end_date, organization, tag, status, search`.\
+6. `cited=true` is a special parameter that will sort in descending order by citation count.
 
 # Additional information
 1. The sample logs are provided in `ingestion_logs.txt`
